@@ -7,7 +7,7 @@ export default{
     computed:{
         _value(){
             var i=this.$data.__value;
-            i=i.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            i=i.replace(/\B(?=(\d{3})+(?!\d))/g,",");
             return i;
         }
     },
@@ -25,8 +25,10 @@ export default{
 
 <style scoped>
     span{
+        border:1px solid black;
+        text-overflow:ellipsis;
         display:inline-block;
         text-align:right;
-        width:100%;
+        width:10%;
     }
 </style>
