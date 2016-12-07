@@ -1,7 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import TreeView from './TreeView.vue'
 
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+Vue.component("TreeView",TreeView); // FIXME crappy code
+new Vue({el:"div.root",template:"<TreeView/>"});
